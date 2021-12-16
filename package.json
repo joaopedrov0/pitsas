@@ -1,0 +1,23 @@
+{
+  "name": "pitsas",
+  "version": "1.0.0",
+  "description": "Um programa simples que recebe pedidos de pizzas para entrega, e exibe essas informações em uma página dedicada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopedrov0/pitsas.git"
+  },
+  "author": "joaopedrov0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaopedrov0/pitsas/issues"
+  },
+  "homepage": "https://github.com/joaopedrov0/pitsas#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.4.0"
+  }
+}
