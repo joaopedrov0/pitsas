@@ -1,0 +1,34 @@
+/*Connecting fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+/*Using fonts*/
+/*
+
+Logo
+font-family: 'Corinthia', cursive;
+
+*/
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+#logo{
+    font-family: 'Corinthia', cursive;
+    font-weight: 700;
+    color: white;
+}
+header{
+    background: #b71c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

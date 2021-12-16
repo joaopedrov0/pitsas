@@ -1,0 +1,13 @@
+header{
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(174deg, #b71c1c 0% 80%, transparent 80% 10%);
+}
+#logo{
+    font-size: 10vw;
+}
+#slogan{
+    font-family: 'Corinthia', cursive;
+    color: white;
+}

@@ -8,9 +8,8 @@ const io = new Server(server)
 // Configurando a pasta public
     app.use(express.static('public'))
 
-
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 io.on('connection', (socket) => {
@@ -27,6 +26,6 @@ server.listen( 3000, () => {
 
 express --save
 socket.io --save
-
+pug --save   --->   UNINSTALL
 
 */
