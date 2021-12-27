@@ -1,13 +1,33 @@
 header{
+    position: relative;
     height: 500px;
     flex-direction: row;
     justify-content: space-evenly;
-    background: linear-gradient(174deg, #b71c1c 0% 80%, transparent 80% 10%);
+    background: #b71c1c;
 }
+
+header::before{
+    position: absolute;
+    content: '';
+    width: 110vw;
+    height: 200px;
+    background-color: #b71c1c;
+    bottom: 0;
+
+    transform: rotateZ(5deg) translateY(50%);
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 #logo{
     font-size: 10vw;
 }
 #slogan{
     font-family: 'Corinthia', cursive;
     color: white;
+}
+
+#logo, #slogan{
+    z-index: 5;
 }
