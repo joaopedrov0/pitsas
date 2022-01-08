@@ -9,6 +9,8 @@ function toggleModal(e) {
     
 }
 
+lastID = 0
+
 var pedidos = []
 
 var sabor0 = document.querySelector('#sabores0')
@@ -24,6 +26,7 @@ class Pizza {
         this.sabor1 = sabor1,
         this.borda = borda,
         this.tamanho = tamanho
+        this.id = lastID + 1
     }
 
     generateHTML(){
@@ -33,6 +36,7 @@ class Pizza {
                     <div class="pizza-sabores">Sabores: ${this.sabor0}</div>
                     <div class="pizza-borda">Borda: ${this.borda}</div>
                     <div class="pizza-tamanho">Tamanho: ${this.tamanho}</div>
+                    <div class="delete-btn" onclick="remove(${this.id})">REMOVER</div>
                 </div>
             `
         } else {
@@ -41,19 +45,23 @@ class Pizza {
                     <div class="pizza-sabores">Sabores: ${this.sabor0} e ${this.sabor1}</div>
                     <div class="pizza-borda">Borda: ${this.borda}</div>
                     <div class="pizza-tamanho">Tamanho: ${this.tamanho}</div>
+                    <div class="delete-btn" onclick="remove(${this.id})">REMOVER</div>
                 </div>
             `
         }
     }
 
-    remove(){
-        pedidos.splice(pedidos.indexOf(this), 1)
-        render()
-    }
+    
+}
+
+function remove(pizzaID){
+    pedidos.splice(pedidos.find(pizza => pizza.id === pizzaID), 1) // essa linha não esta funcionando corretamente (a função em geral)
+    render()
 }
 
 function adicionar(){
     pedidos.push(new Pizza(sabor0.value, sabor1.value, borda.value, tamanho.value))
+    lastID++
     render()
 }
 
