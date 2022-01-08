@@ -17,3 +17,18 @@ Faça o seu pedido!
 
 (Botão de enviar pedido)
     O método será o post e redirecionará o cliente para uma página de agradecimento
+
+
+
+sabores de pizza
+
+calabresa
+marguerita
+portuguesa
+baiana
+frango c catupiry
+lombo ao creme
+calabresa com catupiry
+napolitana
+4 queijos
+doritos

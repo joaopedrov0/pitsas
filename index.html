@@ -36,10 +36,42 @@
                     <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
                 </div>
             </section>
-            <section class="carrinho">
-                <textarea name="sabores" cols="30" rows="10" type="text" class="pedidos" disabled></textarea>
+            <h2>Adicione as pizzas ao seu carrinho</h2>
+            <section class="adicionar-pizzas">
+
+                <select name="sabores0" id="sabores0">
+                    <option value="" selected disabled>Sabor da pizza</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango-catupiry">Franco com catupiry</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="quatro-queijos">Quatro queijos</option>
+                </select> 
+
+                <select name="sabores1" id="sabores1">
+                    <option value="" selected disabled>(Opcional) Segundo sabor</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango-catupiry">Franco com catupiry</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="quatro-queijos">Quatro queijos</option>
+                </select> 
+
+                <select name="borda" id="borda">
+                    <option value="normal" selected>Normal</option>
+                    <option value="catupiry">Catupiry</option>
+                    <option value="cheddar">Cheddar</option>
+                </select>
+
+                <select name="tamanho" id="tamanho">
+                    <option value="normal" selected>Normal</option>
+                    <option value="pequena">Pequena (broto)</option>
+                </select>
+
+                <button id="adicionar-pizza-btn" onclick="adicionar()">Adicionar pizza</button>
+
             </section>
-            formulário
+            <section class="carrinho">
+
+            </section>
         </div>
     </div>
     
@@ -97,7 +129,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         var socket = io();
-        alert('Parabéns! Seu cartão de crédito e endereço ja foram validados! Agora é só aguardar que em breve te enviaremos o presente! Agradecemos a confiança.')
+        //alert('Parabéns! Seu cartão de crédito e endereço ja foram validados! Agora é só aguardar que em breve te enviaremos o presente! Agradecemos a confiança.')
     </script>
 </body>
 </html>

@@ -9,15 +9,5 @@ function toggleModal(e) {
     
 }
 
-var pedidosInput = document.querySelector('textarea.pedidos')
-
 var pedidos = []
 
-function adicionar(sabor){
-    pedidos.push(sabor)
-    renderInput()
-}
-
-function renderInput(){
-    pedidosInput.value = pedidos.join(', ')
-}
