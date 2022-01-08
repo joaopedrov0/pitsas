@@ -95,6 +95,19 @@ body .blocker .pedido .adicionar-pizzas > * {
     align-items: center;
 }
 
+.carrinho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.carrinho .pizza{
+    width: 45%;
+    margin: 5px;
+}
+
 @media screen and (max-width: 880px){
     #sabores0, #sabores1, #borda, #tamanho{
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -113,5 +126,32 @@ body .blocker .pedido .adicionar-pizzas > * {
     
     #adicionar-pizza-btn{
         border-radius: 20px;
+    }
+
+    .pedido .card{
+        width: 45%;
+        height: 220px;
+        margin: 5px;
+    }
+
+    .pedido .card .name{
+        max-width: 80%;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .pedido .card .description{
+        text-indent: 10px;
+        max-width: 80%;
+        margin-bottom: 20px;
+        font-size: 12px;
+        font-weight: 300;
+        color: rgb(112, 112, 112);
+    }
+
+    .carrinho .pizza{
+        width: 90%;
+        margin: 5px;
+        font-size: 12px;
     }
 }
