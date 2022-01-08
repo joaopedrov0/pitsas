@@ -16,8 +16,31 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <div class="blocker closed">
-        <div class="pedido">Lorem ipsum dolor. <div style="width: 30px; height: 30px; background-color: red;"></div></div>
+    <div class="blocker closed allowed">
+        <div class="pedido">
+            <h2>Faça o seu pedido!</h2>
+            <section class="cardapio">
+                <div class="card" onclick="adicionar('calabresa')">
+                    <img src="./image/slogan-background.jpg" alt="">
+                    <div class="name">Calabresa</div>
+                    <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+                </div>
+                <div class="card" onclick="adicionar('calabresa')">
+                    <img src="./image/slogan-background.jpg" alt="">
+                    <div class="name">Calabresa</div>
+                    <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+                </div>
+                <div class="card" onclick="adicionar('calabresa')">
+                    <img src="./image/slogan-background.jpg" alt="">
+                    <div class="name">Calabresa</div>
+                    <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+                </div>
+            </section>
+            <section class="carrinho">
+                <textarea name="sabores" cols="30" rows="10" type="text" class="pedidos" disabled></textarea>
+            </section>
+            formulário
+        </div>
     </div>
     
     <header>
@@ -58,7 +81,7 @@
                 <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
             </div>
         </div>
-        <div id="fazer-pedido"><button>Fazer pedido!</button></div>
+        <div id="fazer-pedido"><button class="allowed">Fazer pedido!</button></div>
         <div id="about"></div>
     </div>
     <footer>

@@ -8,3 +8,12 @@ footer
 
 
 pagina de pedido
+
+Faça o seu pedido!
+
+(aqui terá varios cards de pizza clicavel, que adiciona ou remove pizzas do carrinho)
+
+(aqui a lista das pizzas que estão no carrinho)
+
+(Botão de enviar pedido)
+    O método será o post e redirecionará o cliente para uma página de agradecimento
