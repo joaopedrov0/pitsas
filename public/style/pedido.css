@@ -1,0 +1,36 @@
+.blocker{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    transform: scale(1);
+    transition: all 200ms ease;
+    position: fixed;
+    border-radius: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 6;
+}
+
+.pedido{
+    transform: scale(1);
+    max-width: 960px;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    background-color: #fff;
+
+    transition: all 200ms ease;
+
+    z-index: 7;
+}
+
+.closed{
+    transform: scale(0);
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}

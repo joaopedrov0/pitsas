@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 io.on('connection', (socket) => {
-    console.log('A user connected')
+    console.log('A user connected ', new Date().getMinutes(),':', new Date().getSeconds())
 })
 
 server.listen( 3000, () => {

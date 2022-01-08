@@ -1,33 +1,78 @@
 header{
     position: relative;
-    height: 500px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    background: #b71c1c;
+    background: transparent;
 }
 
-header::before{
-    position: absolute;
-    content: '';
-    width: 110vw;
-    height: 200px;
-    background-color: #b71c1c;
-    bottom: 0;
-
-    transform: rotateZ(5deg) translateY(50%);
-
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+header > *{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
 
 #logo{
-    font-size: 10vw;
+    font-size: clamp(32px, 10vw, 110px);
+    background: #b71c1c;
 }
 #slogan{
+    font-size: clamp(32px ,3vw , 48px);
     font-family: 'Corinthia', cursive;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    height: 400px;
+    background-image: url('../image/slogan-background.jpg');
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    transition: all 200ms ease;
 }
 
 #logo, #slogan{
     z-index: 5;
+}
+
+.wrap > *{
+    width: clamp(340px, 70vw, 1000px);
+}
+
+#intro{
+    max-width: 80%;
+    text-indent: 0px;
+    text-align: center;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#fazer-pedido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#fazer-pedido button{
+    background-color: #b71c1c;
+    color: white;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+
+    transition: all 200ms ease;
+}
+
+#fazer-pedido button:hover{
+    background-color: #b71c1cb9;
+    cursor: pointer;
 }

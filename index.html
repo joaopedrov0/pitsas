@@ -4,26 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Desde 1978 fazendo pizzas de qualidade.">
+    <title>Pitsás - Home</title>
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/pedido.css">
+
+    <!--Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <div class="blocker closed">
+        <div class="pedido">Lorem ipsum dolor. <div style="width: 30px; height: 30px; background-color: red;"></div></div>
+    </div>
+    
     <header>
         <h1 id="logo">Pitsás</h1>
         <h2 id="slogan">Pizzas feitas com amor e qualidade</h2>
     </header>
     <div class="wrap">
-
+        <div id="intro"><i>Desde 1978 nós temos trabalhado com cada vez mais amor, para que se criem momentos inesquecíveis em nossas mesas.</i></div>
+        <div id="products">
+            <div class="card">
+                <img src="./image/slogan-background.jpg" alt="">
+                <div class="name">Calabresa</div>
+                <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+            </div>
+            <div class="card">
+                <img src="./image/slogan-background.jpg" alt="">
+                <div class="name">Calabresa</div>
+                <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+            </div>
+            <div class="card">
+                <img src="./image/slogan-background.jpg" alt="">
+                <div class="name">Calabresa</div>
+                <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+            </div>
+            <div class="card">
+                <img src="./image/slogan-background.jpg" alt="">
+                <div class="name">Calabresa</div>
+                <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+            </div>
+            <div class="card">
+                <img src="./image/slogan-background.jpg" alt="">
+                <div class="name">Calabresa</div>
+                <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+            </div>
+            <div class="card">
+                <img src="./image/slogan-background.jpg" alt="">
+                <div class="name">Calabresa</div>
+                <div class="description">Calabresa, queijo, tomate, orégano, molho de tomate, cebola.</div>
+            </div>
+        </div>
+        <div id="fazer-pedido"><button>Fazer pedido!</button></div>
+        <div id="about"></div>
     </div>
     <footer>
-
+        <div class="contato">
+            <i class="ri-whatsapp-line"></i>
+            <i class="ri-twitter-line"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-mail-line"></i>
+        </div>
+        <div class="copy">Pitsás &copy;</div>
     </footer>
+    <script src="javascripts/pedido.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
         var socket = io();
+        alert('Parabéns! Seu cartão de crédito e endereço ja foram validados! Agora é só aguardar que em breve te enviaremos o presente! Agradecemos a confiança.')
     </script>
 </body>
 </html>

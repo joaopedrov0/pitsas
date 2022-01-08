@@ -1,0 +1,10 @@
+pagina principal
+
+header
+introdução
+imagens e botao para redirecionar para fazer um pedido
+mais detalhes sobre
+footer
+
+
+pagina de pedido
