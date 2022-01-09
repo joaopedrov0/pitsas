@@ -111,6 +111,53 @@ body .blocker .pedido .adicionar-pizzas > * {
     border-radius: 3px;
     background-color: rgb(213, 58, 58);
     color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrinho .pizza .delete-btn{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #b71c1c;
+}
+
+form{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pedido form input{
+    width: 100%;
+    max-width: 360px;
+    border: none;
+    border-bottom: 1px solid #b71c1c;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.finalizar-btn{
+    border-radius: 20px;
+
+    background-color: #b71c1c;
+    color: #fff;
+
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 880px){

@@ -18,6 +18,8 @@ var sabor1 = document.querySelector('#sabores1')
 var borda = document.querySelector('#borda')
 var tamanho = document.querySelector('#tamanho')
 
+var pedidoFormulario = document.querySelector('input#pedido')
+
 var carrinho = document.querySelector('.carrinho')
 
 class Pizza {
@@ -33,19 +35,23 @@ class Pizza {
         if (this.sabor0 == this.sabor1){
             return `
                 <div class="pizza">
-                    <div class="pizza-sabores">Sabores: ${this.sabor0}</div>
-                    <div class="pizza-borda">Borda: ${this.borda}</div>
-                    <div class="pizza-tamanho">Tamanho: ${this.tamanho}</div>
-                    <div class="delete-btn" onclick="remove(${this.id})">REMOVER</div>
+                    <div>
+                        <div class="pizza-sabores">Sabores: ${this.sabor0}</div>
+                        <div class="pizza-borda">Borda: ${this.borda}</div>
+                        <div class="pizza-tamanho">Tamanho: ${this.tamanho}</div>
+                    </div>
+                    <div class="delete-btn" onclick="remove(${this.id})"><i class="ri-delete-bin-line"></i></div>
                 </div>
             `
         } else {
             return `
                 <div class="pizza">
-                    <div class="pizza-sabores">Sabores: ${this.sabor0} e ${this.sabor1}</div>
-                    <div class="pizza-borda">Borda: ${this.borda}</div>
-                    <div class="pizza-tamanho">Tamanho: ${this.tamanho}</div>
-                    <div class="delete-btn" onclick="remove(${this.id})">REMOVER</div>
+                    <div>
+                        <div class="pizza-sabores">Sabores: ${this.sabor0} e ${this.sabor1}</div>
+                        <div class="pizza-borda">Borda: ${this.borda}</div>
+                        <div class="pizza-tamanho">Tamanho: ${this.tamanho}</div>
+                    </div>
+                    <div class="delete-btn" onclick="remove(${this.id})"><i class="ri-delete-bin-line"></i></div>
                 </div>
             `
         }
@@ -55,7 +61,7 @@ class Pizza {
 }
 
 function remove(pizzaID){
-    pedidos.splice(pedidos.find(pizza => pizza.id === pizzaID), 1) // essa linha não esta funcionando corretamente (a função em geral)
+    pedidos.splice(pedidos.indexOf(pedidos.find(pizza => pizza.id === pizzaID)), 1)
     render()
 }
 
@@ -76,4 +82,5 @@ function render(){
     for(let pizza of pedidos){
         carrinho.innerHTML += pizza.generateHTML()
     }
+    pedidoFormulario.value = JSON.stringify(pedidos)
 }

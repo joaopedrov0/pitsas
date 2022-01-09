@@ -72,6 +72,14 @@
             <section class="carrinho">
                 <ul></ul>
             </section>
+            <hr>
+            <h2>Dados de entrega</h2>
+            <form action="/pedido" method="post">
+                <input type="text" name="pedido" id="pedido" value="" hidden>
+                <input type="text" name="endereco" placeholder="Endereço" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+                <input class="finalizar-btn" type="submit" value="Enviar pedido">
+            </form>
         </div>
     </div>
     
