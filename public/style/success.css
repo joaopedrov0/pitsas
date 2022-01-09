@@ -1,0 +1,32 @@
+.success{
+    background-color: #4caf50;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    flex-direction: column;
+}
+
+.success .ri-check-line{
+    color: white;
+
+    font-size: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    padding: 50px;
+
+    border: 10px solid white;
+}
+
+.success > *{
+    text-decoration: none;
+    color: white;
+    font-family: 'Merriweather', serif;
+}

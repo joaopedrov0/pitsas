@@ -13,9 +13,19 @@ var { connect, show, add, deleteMany } = require('./model/db')
 
 // Configurando a pasta public
     app.use(express.static('public'))
+// Parse URL-encoded bodies (as sent by HTML forms)
+    app.use(express.urlencoded())
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
+})
+
+app.post('/pedido', (req, res) => {
+    console.log(req.body)
+
+    connect(add, req.body)
+
+    res.sendFile(__dirname + '/success.html')
 })
 
 io.on('connection', (socket) => {
