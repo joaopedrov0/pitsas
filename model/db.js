@@ -1,8 +1,8 @@
 
 const { MongoClient, Db } = require('mongodb');
-const uri = "mongodb+srv://root:4nf1tr140@mastercluster.jshtk.mongodb.net/pitsas?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@${process.env.CLUSTERNAME}.jshtk.mongodb.net/pitsas?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
+   
 /*
 
 const dbManager = {
