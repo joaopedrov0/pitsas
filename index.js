@@ -32,7 +32,7 @@ io.on('connection', (socket) => {
     console.log('A user connected ', new Date().getMinutes(),':', new Date().getSeconds())
 })
 
-server.listen( 3000, () => {
+server.listen( process.env.PORT || 3000, () => {
     console.log('The server is listening the port: 3000')
 })
 
