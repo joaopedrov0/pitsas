@@ -7,9 +7,11 @@ const { Server } = require('socket.io')
 const io = new Server(server)
 
 // Conectando banco de dados MongoDB
-var { connect, show, add, deleteMany } = require('./model/db')
+var { connect, show, add, deleteMany, client } = require('./model/db')
 // Syntax --> connect(function, params)
 // Tem collection para acessar os pedidos como variável acessível, e cardápio para acessar o cardápio
+
+
 
 // Configurando a pasta public
     app.use(express.static('public'))
@@ -26,6 +28,17 @@ app.post('/pedido', (req, res) => {
     connect(add, req.body)
 
     res.sendFile(__dirname + '/success.html')
+})
+
+app.get('/cardapio', (req, res) => {
+    client.connect(err => {
+        if (err) throw err
+        client.db("pitsas").collection("cardapio").find().toArray((err, result) => {
+            if (err) throw err
+
+            res.end(JSON.stringify(result))
+        })
+    })
 })
 
 io.on('connection', (socket) => {

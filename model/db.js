@@ -62,10 +62,21 @@ function deleteMany(filter, collection){
     })
 }
 
+function getCardapio(){
+    client.connect(err => {
+        if(err) throw err
+        let cardapio = client.db("pitsas").collection("cardapio").find().toArray()
+
+        return cardapio
+    })
+}
+
+
 //connect(show, null)
 module.exports = {
     connect,
     show,
     add,
-    deleteMany
+    deleteMany,
+    client
 }

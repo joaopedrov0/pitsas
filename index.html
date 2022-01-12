@@ -63,7 +63,7 @@
 
                 <select name="tamanho" id="tamanho">
                     <option value="normal" selected>Normal</option>
-                    <option value="pequena">Pequena (broto)</option>
+                    <option value="broto">Pequena (broto)</option>
                 </select>
 
                 <button id="adicionar-pizza-btn" onclick="adicionar()">Adicionar pizza</button>
@@ -72,9 +72,11 @@
             <section class="carrinho">
                 <ul></ul>
             </section>
+            <h3 id="valor-final">Valor final: R$0.00</h3>
             <hr>
             <h2>Dados de entrega</h2>
             <form action="/pedido" method="post">
+                <input type="number" name="preco" id="preco-form" value="" hidden>
                 <input type="text" name="pedido" id="pedido" value="" hidden>
                 <input type="text" name="endereco" placeholder="Endereço" required>
                 <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
