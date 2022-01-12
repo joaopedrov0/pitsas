@@ -38,8 +38,9 @@ function connect(func, params){
     client.connect(err => {
         if(err) throw err
         const collection = client.db("pitsas").collection("pedidos")
+        const cardapio = client.db("pitsas").collection("cardapio")
         
-        func(params, collection)
+        func(params, collection, cardapio)
     })
 }
 

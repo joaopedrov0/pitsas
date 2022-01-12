@@ -9,7 +9,7 @@ const io = new Server(server)
 // Conectando banco de dados MongoDB
 var { connect, show, add, deleteMany } = require('./model/db')
 // Syntax --> connect(function, params)
-
+// Tem collection para acessar os pedidos como variável acessível, e cardápio para acessar o cardápio
 
 // Configurando a pasta public
     app.use(express.static('public'))

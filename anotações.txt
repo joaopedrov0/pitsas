@@ -22,13 +22,16 @@ Faça o seu pedido!
 
 sabores de pizza
 
-calabresa
-marguerita
-portuguesa
-baiana
-frango c catupiry
-lombo ao creme
-calabresa com catupiry
-napolitana
-4 queijos
-doritos
+calabresa 29,00 / 17,00
+marguerita 34,00 / 18,00
+portuguesa 36,00 / 20,00
+baiana 36,00 / 20,00
+frango c catupiry 36,00 / 20,00
+lombo ao creme <Not Found>
+calabresa com catupiry 36,00 / 19,00
+napolitana 34,00 / 19,00
+4 queijos 39,00 / 21,00
+doritos 44,00 / 25,00
+
+
+borda (+5 reais)
