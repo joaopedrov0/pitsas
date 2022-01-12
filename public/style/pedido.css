@@ -160,6 +160,19 @@ form{
     align-items: center;
 }
 
+#valor-final{
+    height: 40px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    background-color: #b71c1c;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 880px){
     #sabores0, #sabores1, #borda, #tamanho{
         border: 1px solid rgba(0, 0, 0, 0.2);
