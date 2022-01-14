@@ -173,6 +173,29 @@ form{
     align-items: center;
 }
 
+/*Tabela*/
+
+.pedido table{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-spacing: 0;
+    margin-top: 5px;
+}
+
+table thead tr > *, table tbody tr > *{
+    font-size: 75%;
+    text-align: center;
+    padding: 5px;
+}
+
+table tbody > tr:nth-child(2n){
+    background-color: rgb(213, 58, 58);
+    color: white;
+}
+
+.pedido table td:first-letter, .pedido table th:first-letter {
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 880px){
     #sabores0, #sabores1, #borda, #tamanho{
         border: 1px solid rgba(0, 0, 0, 0.2);

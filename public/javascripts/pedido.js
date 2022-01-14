@@ -153,4 +153,17 @@ function loadOptions(){
     sabor1.innerHTML = sabor0.innerHTML
 }
 
-function loadCardapio(){}
+function loadCardapio(){
+    let cardapioHTML = document.querySelector('.cardapio table tbody')
+
+    for(let sabor of cardapio) {
+        cardapioHTML.innerHTML += `
+        <tr>
+            <td>${sabor.nome}</td>
+            <td>${sabor.descricao}</td>
+            <td>R$${sabor.preco.normal.toFixed(2)}</td>
+            <td>R$${sabor.preco.broto.toFixed(2)}</td>
+        </tr>
+        `
+    }
+}

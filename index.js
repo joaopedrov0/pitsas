@@ -41,6 +41,17 @@ app.get('/cardapio', (req, res) => {
     })
 })
 
+app.get('/pedidos', (req, res) => {
+    client.connect(err => {
+        if (err) throw err
+        client.db("pitsas").collection("pedidos").find().toArray((err, result) => {
+            if (err) throw err
+
+            res.end(JSON.stringify(result))
+        })
+    })
+})
+
 io.on('connection', (socket) => {
     console.log('A user connected ', new Date().getMinutes(),':', new Date().getSeconds())
 })
