@@ -180,6 +180,7 @@ form{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-spacing: 0;
     margin-top: 5px;
+    max-width: 95%;
 }
 
 table thead tr > *, table tbody tr > *{
