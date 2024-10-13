@@ -14,10 +14,10 @@ class PizzaCardapio {
 }
                             //(Nome, preço no tamanho NORMAL, preço da BROTO)
 var pitsa = new PizzaCardapio(
-    "Doritos", //Nome
-    "muçarela, doritos, cheddar, bacon e azeitonas", //Descrição
-    44.00, //Preço normal
-    25.00, //Preço da broto
+    "Quatro queijos", //Nome
+    "muçarela, catupiry, parmesão, gorgonzola e azeitonas", //Descrição
+    39.00, //Preço normal
+    21.00, //Preço da broto
     )
 
 // TAREFA: ADICIONAR PIZZAS AO CARDAPIO
