@@ -89,12 +89,17 @@ function remove(pizzaID){
 }
 
 function adicionar(){
-    let newPizza = new Pizza(sabor0.value, sabor1.value, borda.value, tamanho.value)
-    pedidos.push(newPizza)
-    lastID++
-    valorFinal += newPizza.valor
+    if(sabor0.value && sabor1.value && borda.value && tamanho.value){
+        let newPizza = new Pizza(sabor0.value, sabor1.value, borda.value, tamanho.value)
+        pedidos.push(newPizza)
+        lastID++
+        valorFinal += newPizza.valor
 
-    render()
+        render()
+    } else {
+        alert("Atenção, selecione como você quer a pizza antes de adicioná-la ao carrinho!")
+    }
+    
 }
 
 sabor0.addEventListener('change', autocomplete)
